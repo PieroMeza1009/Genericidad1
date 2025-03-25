@@ -1,4 +1,4 @@
-package Genericidad1.main;
+package Genericidad1;
 
 public class Chocolatina {
 
