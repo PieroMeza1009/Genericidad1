@@ -46,7 +46,7 @@ public class Principal {
  
          //uso un for para que recorra todo lo de la bolsa y lo imprima
          for (Golosina golosina: bolsaGo) {
-             System.out.println(golosina.getNombre() + golosina.getPeso ());
+             System.out.println("Golosina: " + g.getNombre() + ", Peso: " + g.getPeso());
 
 
         }
