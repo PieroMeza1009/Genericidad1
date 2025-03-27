@@ -4,7 +4,7 @@ public class Principal {
     
     public static void main(String[] args) {
     
-        Bolsa < Chocolatina > bolsaCho = new Bolsa < Chocolatina > ();
+        Bolsa < Chocolatina > bolsaCho = new Bolsa <Chocolatina> (3);
     
         Chocolatina c = new Chocolatina("milka");
     
