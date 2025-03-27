@@ -26,7 +26,31 @@ public class Principal {
         for (Chocolatina chocolatina: bolsaCho) {
             System.out.println(chocolatina.getMarca());
 
+        
+         //aca creamos una bolsa de golosinas con tope de 3
+         Bolsa < Golosina > bolsaGo= new Bolsa <Golosina> (3);
+    
+         ///creeamos varias golosinas
+         Golosina g = new Golosina("caramelo", 2.5);
+     
+         Golosina g1 = new Golosina("gomitas", 1.5);
+     
+         Golosina g2 = new Golosina("marshmellos", 5.5); 
+         
+         ///aca vamos a agregar las golosinas a la bolsa
+         bolsaGo.add(g);
+ 
+         bolsaGo.add(g1);
+ 
+         bolsaGo.add(g2);
+ 
+         //uso un for para que recorra todo lo de la bolsa y lo imprima
+         for (Golosina golosina: bolsaGo) {
+             System.out.println(golosina.getNombre() + golosina.getPeso ());
+
+
         }
 
+        }
     }
 }
