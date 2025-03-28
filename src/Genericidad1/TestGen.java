@@ -20,6 +20,23 @@ public class TestGen {
         
         System.out.println("Cajoneria de Golosinas:");
         System.out.println(cajoneriaGolosinas);
-}
-}
+
+        // Verificar existencia
+        System.out.println("Posición de 'Goma': " + cajoneriaGolosinas.search(new Golosina("Goma", 5.5)));
+        
+        // Prueba delete
+        System.out.println("Eliminando 'Chocolate': " + cajoneriaGolosinas.delete(new Golosina("Chocolate", 15.0)));
+        System.out.println(cajoneriaGolosinas);
+        
+        // Prueba con Chocolatinas
+        Cajoneria<Chocolatina> cajoneriaChocolatinas = new Cajoneria<>(3);
+        cajoneriaChocolatinas.add(new Chocolatina("Milka"), "rojo");
+        cajoneriaChocolatinas.add(new Chocolatina("Ferrero"), "dorado");
+        cajoneriaChocolatinas.add(new Chocolatina("KitKat"), "negro");
+        
+        System.out.println("Cajoneria de Chocolatinas:");
+        System.out.println(cajoneriaChocolatinas);
+    }
+}   
+
 
