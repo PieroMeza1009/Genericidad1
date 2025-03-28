@@ -1,6 +1,8 @@
 package Genericidad1;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+
 
 class Cajoneria<T> implements Iterable<T> {
     private ArrayList<T> lista = new ArrayList<T>();
@@ -34,5 +36,22 @@ class Cajoneria<T> implements Iterable<T> {
             return lista.remove(index);
         }
         return null;
+    }
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < lista.size(); i++) {
+            if (lista.get(i) instanceof Caja) {
+                Caja caja = (Caja) lista.get(i);
+                sb.append("Posición: ").append(i)
+                  .append(", Color: ").append(caja.getColor())
+                  .append(", Contenido: ").append(caja.getContenido())
+                  .append("\n");
+            }
+        }
+        return sb.toString();
+    }
+    
+    public Iterator<T> iterator() {
+        return lista.iterator();
     }
 }
