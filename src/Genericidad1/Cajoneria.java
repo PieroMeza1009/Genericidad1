@@ -28,4 +28,11 @@ class Cajoneria<T> implements Iterable<T> {
         }
         return -1;
     }
+    public T delete(T objeto) {
+        int index = lista.indexOf(objeto);
+        if (index != -1) {
+            return lista.remove(index);
+        }
+        return null;
+    }
 }
