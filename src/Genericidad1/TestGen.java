@@ -10,12 +10,16 @@ public class TestGen {
         return false;
     }
     public static void main(String[] args) {
-        String[] v = {"Perez", "Sanchez", "Rodriguez"};
-        Integer[] w = {12, 34, 56};
-
-        System.out.println(exist(v, "Sanchez")); // true
-        System.out.println(exist(w, 34)); // true
-        System.out.println(exist(w, 100)); // false
-    }
+        // Prueba con Golosinas
+        Cajoneria<Golosina> cajoneriaGolosinas = new Cajoneria<>(5);
+        cajoneriaGolosinas.add(new Golosina("Caramelo", 10.5), "rojo");
+        cajoneriaGolosinas.add(new Golosina("Chocolate", 15.0), "verde");
+        cajoneriaGolosinas.add(new Golosina("Goma", 5.5), "azul");
+        cajoneriaGolosinas.add(new Golosina("Chicle", 8.0), "amarillo");
+        cajoneriaGolosinas.add(new Golosina("Turrón", 12.3), "morado");
+        
+        System.out.println("Cajoneria de Golosinas:");
+        System.out.println(cajoneriaGolosinas);
+}
 }
 
