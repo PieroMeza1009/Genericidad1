@@ -18,4 +18,14 @@ class Cajoneria<T> implements Iterable<T> {
             lista.add(objeto);
         }
     }
+    public int search(T objeto) {
+        for (int i = 0; i < lista.size(); i++) {
+            if (lista.get(i).equals(objeto)) {
+                if (objeto instanceof Caja) {
+                    return i;
+                }
+            }
+        }
+        return -1;
+    }
 }
