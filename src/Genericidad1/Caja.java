@@ -11,4 +11,20 @@ public class Caja {
     public Caja(String color) {
         this.color = color;
     }
+        
+    public String getColor() {
+        return color;
+    }
+    
+    public void setColor(String color) {
+        this.color = color;
+    }
+    
+    public Object getContenido() {
+        return contenido;
+    }
+    
+    public void setContenido(Object contenido) {
+        this.contenido = contenido;
+    }
 }
