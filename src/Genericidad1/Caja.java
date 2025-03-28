@@ -1,7 +1,5 @@
 package Genericidad1;
 
-import java.util.ArrayList;
-import java.util.Iterator;
 
 // Clase Caja
 public class Caja {
